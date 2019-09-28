@@ -62,19 +62,23 @@ export default class DeciderApp extends React.Component {
 
         return (
             <div>
-                <Header subTitle={subTitle}/>
-                <Action
-                    hasOptions={this.state.options.length > 0}
-                    handleDecision={this.handleDecision}
-                />
-                <Options
-                    options={this.state.options}
-                    handleDeleteOptions={this.handleDeleteOptions}
-                    handleDeleteOption={this.handleDeleteOption}
-                />
-                <AddOption
-                    handleAddOption={this.handleAddOption}
-                />
+                <Header subTitle = {subTitle}/>
+                    <div className = "container">
+                        <Action
+                            hasOptions = {this.state.options.length > 0}
+                            handleDecision = {this.handleDecision}
+                        />
+                        <div className = "widget">
+                        <Options
+                            options = {this.state.options}
+                            handleDeleteOptions = {this.handleDeleteOptions}
+                            handleDeleteOption = {this.handleDeleteOption}
+                        />
+                        <AddOption
+                            handleAddOption = {this.handleAddOption}
+                        />
+                            </div>
+                    </div>
                 <OptionModal 
                     selectedOption = {this.state.selectedOption}
                     handleClearSelectedOption = {this.handleClearSelectedOption}
