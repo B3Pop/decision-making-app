@@ -5,7 +5,7 @@
     color: white;
     font-weight: bold;
     font-size: $large-size;
-    margin-bottom: $xlarge-size;
+    margin-bottom: $small-size;
     padding: 2.4rem;
     width: 100%;
 }
@@ -28,4 +28,9 @@
     border: none;
     color: $light-purple;
     padding: 0;
+}
+@media (min-width: $desktop-break) {
+    .large-button {
+        margin-bottom: $xlarge-size;
+    }
 }

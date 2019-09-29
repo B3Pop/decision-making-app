@@ -1,7 +1,7 @@
 .header {
     background: $dark-gray;
     color: white;
-    margin-bottom: $xlarge-size;
+    margin-bottom: $small-size;
     padding: $reg-size 0;
 }
 
@@ -15,4 +15,10 @@
     font-size: $reg-size;
     font-weight: 500;
     margin: 0;
+}
+
+@media (min-width: $desktop-break) {
+    .header {
+        margin-bottom: $xlarge-size;
+    }
 }
