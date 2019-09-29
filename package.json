@@ -1,8 +1,8 @@
 {
-  "name": "indecision-app",
+  "name": "decision-making-app",
   "version": "1.0.0",
   "main": "index.js",
-  "author": "Andrew Mead",
+  "author": "Brian Gass",
   "license": "MIT",
   "scripts": {
     "serve": "live-server public/",
